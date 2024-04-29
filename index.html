@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Som das Seis</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+
+    <h1 class="title">O Som das Seis</h1>
+
+    <div class="name_level">
+
+        <div class="div-name">
+            <label for="name" class="label">nome</label>
+            <input type="text" class="name" id="name">
+        </div>
+
+        <div class="div-level">
+            <label for="level" class="label">nível</label>
+            <input type="number" class="level" min="1" max="6" id="level">
+        </div>
+    </div>
+
+    <div class="attributes">
+        <h1>Atributos</h1>
+        <table>
+            <tr>
+                <th>Físico</th>
+                <td> <input type="checkbox" id="physical1"></td>
+                <td> <input type="checkbox" id="physical2"></td>
+                <td> <input type="checkbox" id="physical3"></td>
+                <td> <input type="checkbox" id="physical4"></td>
+                <td> <input type="checkbox" id="physical5"></td>
+
+            </tr>
+            </tr>
+            <tr>
+                <th>Agilidade</th>
+                <td> <input type="checkbox" id="agility1"></td>
+                <td> <input type="checkbox" id="agility2"></td>
+                <td> <input type="checkbox" id="agility3"></td>
+                <td> <input type="checkbox" id="agility4"></td>
+                <td> <input type="checkbox" id="agility5"></td>
+            </tr>
+            <tr>
+                <th>Intelecto</th>
+                <td> <input type="checkbox" id="intellect1"></td>
+                <td> <input type="checkbox" id="intellect2"></td>
+                <td> <input type="checkbox" id="intellect3"></td>
+                <td> <input type="checkbox" id="intellect4"></td>
+                <td> <input type="checkbox" id="intellect5"></td>
+            </tr>
+            <tr>
+                <th>Coragem</th>
+                <td> <input type="checkbox" id="courage1"></td>
+                <td> <input type="checkbox" id="courage2"></td>
+                <td> <input type="checkbox" id="courage3"></td>
+                <td> <input type="checkbox" id="courage4"></td>
+                <td> <input type="checkbox" id="courage5"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="life_defense">
+
+        <div class="div-live">
+            <label for="life" class="label">vida</label>
+            <input type="number" class="life" min="1" max="50" id="life">
+        </div>
+
+        <div class="div-defense">
+            <label for="defense" class="label">defesa</label>
+            <input type="number" class="defense" min="1" max="10" id="level">
+        </div>
+
+    </div>
+
+    <div class="torment_reward">
+
+        <div class="div-torment">
+            <label for="torment" class="label">tormento</label>
+            <input type="text" class="torment">
+        </div>
+
+        <div class="div-reward">
+            <label for="reward" class="label">recompensa</label>
+            <input type="number" class="reward" min="0.00" max="10000.00" step="0.01" />
+        </div>
+
+    </div>
+
+    <div class="initiative_actions">
+
+        <div class="div-initiative">
+            <label for="initiative" class="label">iniciativa</label>
+            <input type="number" min="1" max="10" class="initiative">
+        </div>
+
+        <div class="div-actions">
+            <label for="actions" class="label">ações</label>
+            <input type="number" class="actions" min="1" max="10" />
+        </div>
+
+    </div>
+
+    <div class="background">
+        <h1>Antecedentes</h1>
+        <table>
+            <tr>
+                <th>combate</th>
+                <td> <input type="checkbox" id="combat1"></td>
+                <td> <input type="checkbox" id="combat2"></td>
+                <td> <input type="checkbox" id="combat3"></td>
+                <td> <input type="checkbox" id="combat4"></td>
+                <td> <input type="checkbox" id="combat5"></td>
+
+            </tr>
+            </tr>
+            <tr>
+                <th>negócios</th>
+                <td> <input type="checkbox" id="business1"></td>
+                <td> <input type="checkbox" id="business2"></td>
+                <td> <input type="checkbox" id="business3"></td>
+                <td> <input type="checkbox" id="business4"></td>
+                <td> <input type="checkbox" id="business5"></td>
+            </tr>
+            <tr>
+                <th>montaria</th>
+                <td> <input type="checkbox" id="riding1"></td>
+                <td> <input type="checkbox" id="riding2"></td>
+                <td> <input type="checkbox" id="riding3"></td>
+                <td> <input type="checkbox" id="riding4"></td>
+                <td> <input type="checkbox" id="riding5"></td>
+            </tr>
+            <tr>
+                <th>tradição</th>
+                <td> <input type="checkbox" id="tradition1"></td>
+                <td> <input type="checkbox" id="tradition2"></td>
+                <td> <input type="checkbox" id="tradition3"></td>
+                <td> <input type="checkbox" id="tradition4"></td>
+                <td> <input type="checkbox" id="tradition5"></td>
+            </tr>
+            <tr>
+                <th>labuta</th>
+                <td> <input type="checkbox" id="toil1"></td>
+                <td> <input type="checkbox" id="toil2"></td>
+                <td> <input type="checkbox" id="toil3"></td>
+                <td> <input type="checkbox" id="toil4"></td>
+                <td> <input type="checkbox" id="toil5"></td>
+            </tr>
+            <tr>
+                <th>exploração</th>
+                <td> <input type="checkbox" id="exploration1"></td>
+                <td> <input type="checkbox" id="exploration2"></td>
+                <td> <input type="checkbox" id="exploration3"></td>
+                <td> <input type="checkbox" id="exploration4"></td>
+                <td> <input type="checkbox" id="exploration5"></td>
+            </tr>
+            <tr>
+                <th>roubo</th>
+                <td> <input type="checkbox" id="theft1"></td>
+                <td> <input type="checkbox" id="theft2"></td>
+                <td> <input type="checkbox" id="theft3"></td>
+                <td> <input type="checkbox" id="theft4"></td>
+                <td> <input type="checkbox" id="theft5"></td>
+            </tr>
+            <tr>
+                <th>medicina</th>
+                <td> <input type="checkbox" id="medicine1"></td>
+                <td> <input type="checkbox" id="medicine2"></td>
+                <td> <input type="checkbox" id="medicine3"></td>
+                <td> <input type="checkbox" id="medicine4"></td>
+                <td> <input type="checkbox" id="medicine5"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="skills">
+
+        <h1 class="skills-title">habilidades</h1>
+        <form>
+            <label for="resposta">Adicionar habilidade:</label>
+            <select>
+                <option value="" selected disabled>Escolha uma habilidade</option>
+                <option value="LIGHT MY FIRE">LIGHT MY FIRE</option>
+                <option value="LETS DANCE">LETS DANCE</option>
+                <option value="FORTUNATE SON">FORTUNATE SON</option>
+                <option value="DONT STOP BELIEVING">DONT STOP BELIEVING</option>
+                <option value="IMMIGRANT SONG">IMMIGRANT SONG</option>
+                <option value="GIMME SHELTER">GIMME SHELTER</option>
+                <option value="ANOTHER ONE BITES THE DUST">ANOTHER ONE BITES THE DUST - RASTEIRA</option>
+                <option value="ANOTHER ONE BITES THE DUST">ANOTHER ONE BITES THE DUST - KUNG-FU</option>
+                <option value="ANOTHER ONE BITES THE DUST">ANOTHER ONE BITES THE DUST - SUPLEX</option>
+                <option value="ANOTHER ONE BITES THE DUST">ANOTHER ONE BITES THE DUST - BRIGA DE BAR</option>
+                <option value="ANOTHER ONE BITES THE DUST">ANOTHER ONE BITES THE DUST - TAPA COM AS COSTAS DA MÃO
+                </option>
+                <option value="RIDERS ON THE STORM">RIDERS ON THE STORM</option>
+                <option value="BORN TO BE WILD">BORN TO BE WILD</option>
+                <option value="SMOKE ON THE WATER">SMOKE ON THE WATER</option>
+                <option value="UNDER PRESSURE">UNDER PRESSURE</option>
+                <option value="HEARTBREAKER">HEARTBREAKER</option>
+                <option value="BARRACUDA">BARRACUDA</option>
+                <option value="SWEET EMOTION">SWEET EMOTION</option>
+                <option value="CRAZY TRAIN">CRAZY TRAIN</option>
+                <option value="CARRY ON MY WAYWARD SON">CARRY ON MY WAYWARD SON</option>
+                <option value="WAR PIGS">WAR PIGS</option>
+                <option value="ACE OF SPADES">ACE OF SPADES</option>
+                <option value="A HORSE WITH NO NAME">A HORSE WITH NO NAME</option>
+                <option value="I WANT TO HOLD YOUR HAND">I WANT TO HOLD YOUR HAND</option>
+                <option value="PARANOID">PARANOID</option>
+                <option value="RAMBLE ON">RAMBLE ON</option>
+                <option value="AQUALUNG">AQUALUNG</option>
+                <option value="MORE THAN A FEELING">MORE THAN A FEELING</option>
+            </select>
+
+            <input type="submit" value="Adicionar">
+        </form>
+
+        <table class="table-skills" id="skills">
+            <tr>
+                <td>RAMBLE ON: 2 movimentos com 1 ação/ +1 em testes de fuga.</td>
+            </tr>
+            <tr>
+                <td>ANOTHER ONE BITES THE DUST: TAPA COM AS COSTAS DA MÃO: a bifa faz com que a dignidade do inimigo
+                    saia dele por alguns momentos, deixando-o pasmo e surpreso. É preciso gastar uma ação para se
+                    recuperar desse tapa na dignidade.</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="reputation_money">
+
+        <div class="div-reputation">
+            <label for="reputation" class="label">reputação</label>
+            <input type="text" class="reputation" id="reputation">
+        </div>
+
+        <div class="div-money">
+            <label for="money" class="label">U$</label>
+            <input type="number" class="money" min="0.00" max="10000.00" step="0.01" />
+        </div>
+    </div>
+
+    <div class="equipment">
+
+        <h1 class="equipment-title">equipamento</h1>
+        <form>
+            <label for="resposta">Adicionar equipamento:</label>
+            <select>
+                <option value="" selected disabled>Escolha um equipamento</option>
+                <option value="Camisa">Camisa</option>
+                <option value="Calça">Calça</option>
+                <option value="Saia Longa">Saia Longa</option>
+                <option value="Ceroulas">Ceroulas</option>
+                <option value="Chapéu">Chapéu</option>
+                <option value="Boina">Boina</option>
+                <option value="Lenço">Lenço</option>
+                <option value="Colete">Colete</option>
+                <option value="Casaco">Casaco</option>
+                <option value="Luvas">Luvas</option>
+                <option value="Meias">Meias</option>
+                <option value="Botas">Botas</option>
+                <option value="Sapatos">Sapatos</option>
+                <option value="Vestido">Vestido</option>
+                <option value="Corset">Corset</option>
+                <option value="Roupas Finas">Roupas Finas</option>
+                <option value="Perneiras">Perneiras</option>
+                <option value="Pijamas">Pijamas</option>
+                <option value="Poncho">Poncho</option>
+                <option value="Sombrero">Sombrero</option>
+                <option value="Óculos">Óculos</option>
+                <option value="Maquiagem">Maquiagem</option>
+                <option value="Roupa de Gala">Roupa de Gala</option>
+                <option value="Sobretudo">Sobretudo</option>
+                <option value="Leque">Leque</option>
+                <option value="Tabaco">Tabaco</option>
+                <option value="Cigarros">Cigarros</option>
+                <option value="Cerveja (garrafa)">Cerveja (garrafa)</option>
+                <option value="Vinho (garrafa)">Vinho (garrafa)</option>
+                <option value="Whisky (shot)">Whisky (shot)</option>
+                <option value="Moonshine (garrafa)">Moonshine (garrafa)</option>
+                <option value="Conhaque fino">Conhaque fino</option>
+
+                <option value="Café">Café</option>
+                <option value="Bacon">Bacon</option>
+                <option value="Refeição">Refeição</option>
+                <option value="Biscoitos">Biscoitos</option>
+                <option value="Lanterna">Lanterna</option>
+                <option value="Martelo">Martelo</option>
+                <option value="Prego">Prego (20)</option>
+                <option value="Pá">Pá</option>
+                <option value="Picareta">Picareta</option>
+                <option value="Forcado">Forcado</option>
+                <option value="Foice">Foice</option>
+                <option value="Sabão (barra)">Sabão (barra)</option>
+                <option value="Escova">Escova</option>
+                <option value="Violão">Violão</option>
+                <option value="Gaita">Gaita</option>
+                <option value="Banjo">Banjo</option>
+                <option value="Tônico Capilar">Tônico Capilar</option>
+                <option value="Corda">Corda (10m)</option>
+                <option value="Jornal">Jornal</option>
+
+
+            </select>
+
+            <input type="submit" value="Adicionar">
+
+
+        </form>
+
+        <form>
+            <label for="resposta">Adicionar arma:</label>
+            <select>
+                <option value="" selected disabled>Escolha uma arma</option>
+
+                <option value="Munição">Munição</option>
+                <option value="Revolver">Revolver</option>
+                <option value="Espingarda">Espingarda</option>
+                <option value="Escopeta">Escopeta</option>
+                <option value="Metralhadora Montada">Metralhadora Montada</option>
+                <option value="Rifle de Precisão">Rifle de Precisão</option>
+                <option value="Faca">Faca</option>
+                <option value="Sabre">Sabre</option>
+                <option value="Tomahawk">Tomahawk</option>
+                <option value="Lança">Lança</option>
+                <option value="Arco e Flecha">Arco e Flecha</option>
+                <option value="Chicote">Chicote</option>
+                <option value="Canhão Montado">Canhão Montado</option>
+                <option value="Molotov">Molotov</option>
+                <option value="Dinamite">Dinamite</option>
+            </select>
+
+
+            <input type="submit" value="Adicionar">
+
+
+        </form>
+
+        <table class="table-equipment" id="equipment">
+            <tr>
+                <td>Revólver</td>
+                <td>$6</td>
+                <td>6 balas</td>
+                <td>2 ações</td>
+                <td>1d6 perto e longe.</td>
+            </tr>
+            <tr>
+                <td>Lanterna</td>
+                <td>$10</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <h1 class="horse_title">Seu Cavalo</h1>
+
+    <div class="horse">
+
+        <div class="div-horse_name">
+            <label for="horse_name" class="label">nome</label>
+            <input type="text" class="name" id="horse_name">
+        </div>
+
+        <div class="div-horse_level">
+            <label for="horse_level" class="label">fidelidade</label>
+            <input type="number" class="horse_level" min="1" max="6" id="horse_level">
+        </div>
+    </div>
+
+
+    <div class="horse_attributes">
+        <table>
+            <tr>
+                <th>potência</th>
+                <td> <input type="checkbox" id="power1"></td>
+                <td> <input type="checkbox" id="power2"></td>
+                <td> <input type="checkbox" id="power3"></td>
+                <td> <input type="checkbox" id="power4"></td>
+                <td> <input type="checkbox" id="power5"></td>
+
+            </tr>
+            </tr>
+            <tr>
+                <th>vigor</th>
+                <td> <input type="checkbox" id="force1"></td>
+                <td> <input type="checkbox" id="force2"></td>
+                <td> <input type="checkbox" id="force3"></td>
+                <td> <input type="checkbox" id="force4"></td>
+                <td> <input type="checkbox" id="force5"></td>
+            </tr>
+
+        </table>
+    </div>
+
+
+    <div class="horse_life_defense_damage">
+
+        <div class="div-horse_life">
+            <label for="life" class="label">vida</label>
+            <input type="number" class="life" min="1" max="50" id="life">
+            <label for="life" class="label">1d6 + vigor</label>
+        </div>
+
+        <div class="div-horse_defense">
+            <label for="defense" class="label">defesa</label>
+            <input type="number" class="defense" min="1" max="10" id="level">
+            <label for="life" class="label">5 + vigor</label>
+        </div>
+
+        <div class="div-damage">
+            <label for="defense" class="label">dano</label>
+            <input type="number" class="defense" min="1" max="10" id="level">
+            <label for="life" class="label">6 + potencia</label>
+        </div>
+
+    </div>
+
+    <div class="horse_loyalty">
+        <table>
+            <tr><td><input type="checkbox">Antes de mais nada, de um nome a seu animal. Agora sabe quando você está falando com ele.</td></tr>
+            <tr><td><input type="checkbox">O Cavalo corre mais rapido e pode saltar mais longe. Adicione +1 à sua potência</td></tr>
+            <tr><td><input type="checkbox">O cavalo vai até você com um assovio, e não permite que outras pessoas o montem.</td></tr>
+            <tr><td><input type="checkbox">Seu cavalo está mais esbelto e forte. Adicione +2 à sua potencia</td></tr>
+        </table>
+        
+    </div>
+
+    
+    <div class="hotrse_equipment">
+
+        <h1 class="equipment-title">itens no cavalo</h1>
+        <form>
+            <label for="resposta">Adicionar equipamento:</label>
+            <select>
+                <option value="" selected disabled>Escolha um equipamento</option>
+                <option value="Camisa">Camisa</option>
+                <option value="Calça">Calça</option>
+                <option value="Saia Longa">Saia Longa</option>
+                <option value="Ceroulas">Ceroulas</option>
+                <option value="Chapéu">Chapéu</option>
+                <option value="Boina">Boina</option>
+                <option value="Lenço">Lenço</option>
+                <option value="Colete">Colete</option>
+                <option value="Casaco">Casaco</option>
+                <option value="Luvas">Luvas</option>
+                <option value="Meias">Meias</option>
+                <option value="Botas">Botas</option>
+                <option value="Sapatos">Sapatos</option>
+                <option value="Vestido">Vestido</option>
+                <option value="Corset">Corset</option>
+                <option value="Roupas Finas">Roupas Finas</option>
+                <option value="Perneiras">Perneiras</option>
+                <option value="Pijamas">Pijamas</option>
+                <option value="Poncho">Poncho</option>
+                <option value="Sombrero">Sombrero</option>
+                <option value="Óculos">Óculos</option>
+                <option value="Maquiagem">Maquiagem</option>
+                <option value="Roupa de Gala">Roupa de Gala</option>
+                <option value="Sobretudo">Sobretudo</option>
+                <option value="Leque">Leque</option>
+                <option value="Tabaco">Tabaco</option>
+                <option value="Cigarros">Cigarros</option>
+                <option value="Cerveja (garrafa)">Cerveja (garrafa)</option>
+                <option value="Vinho (garrafa)">Vinho (garrafa)</option>
+                <option value="Whisky (shot)">Whisky (shot)</option>
+                <option value="Moonshine (garrafa)">Moonshine (garrafa)</option>
+                <option value="Conhaque fino">Conhaque fino</option>
+
+                <option value="Café">Café</option>
+                <option value="Bacon">Bacon</option>
+                <option value="Refeição">Refeição</option>
+                <option value="Biscoitos">Biscoitos</option>
+                <option value="Lanterna">Lanterna</option>
+                <option value="Martelo">Martelo</option>
+                <option value="Prego">Prego (20)</option>
+                <option value="Pá">Pá</option>
+                <option value="Picareta">Picareta</option>
+                <option value="Forcado">Forcado</option>
+                <option value="Foice">Foice</option>
+                <option value="Sabão (barra)">Sabão (barra)</option>
+                <option value="Escova">Escova</option>
+                <option value="Violão">Violão</option>
+                <option value="Gaita">Gaita</option>
+                <option value="Banjo">Banjo</option>
+                <option value="Tônico Capilar">Tônico Capilar</option>
+                <option value="Corda">Corda (10m)</option>
+                <option value="Jornal">Jornal</option>
+
+
+            </select>
+
+            <input type="submit" value="Adicionar">
+
+
+        </form>
+
+        <form>
+            <label for="resposta">Adicionar arma:</label>
+            <select>
+                <option value="" selected disabled>Escolha uma arma</option>
+
+                <option value="Munição">Munição</option>
+                <option value="Revolver">Revolver</option>
+                <option value="Espingarda">Espingarda</option>
+                <option value="Escopeta">Escopeta</option>
+                <option value="Metralhadora Montada">Metralhadora Montada</option>
+                <option value="Rifle de Precisão">Rifle de Precisão</option>
+                <option value="Faca">Faca</option>
+                <option value="Sabre">Sabre</option>
+                <option value="Tomahawk">Tomahawk</option>
+                <option value="Lança">Lança</option>
+                <option value="Arco e Flecha">Arco e Flecha</option>
+                <option value="Chicote">Chicote</option>
+                <option value="Canhão Montado">Canhão Montado</option>
+                <option value="Molotov">Molotov</option>
+                <option value="Dinamite">Dinamite</option>
+            </select>
+
+
+            <input type="submit" value="Adicionar">
+
+
+        </form>
+
+        <table class="table-equipment" id="equipment">
+            <tr>
+                <td>Revólver</td>
+                <td>$6</td>
+                <td>6 balas</td>
+                <td>2 ações</td>
+                <td>1d6 perto e longe.</td>
+            </tr>
+            <tr>
+                <td>Lanterna</td>
+                <td>$10</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+
+</body>
+
+</html>
